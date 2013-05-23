@@ -19,7 +19,7 @@ namespace NoRedrawingNoJumping
             InitializeComponent();
             newGame = new Game();
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            //this.BackgroundImage = Properties.Resources.bezime;
+            this.BackgroundImage = Properties.Resources.bezime;
            
         }
 
