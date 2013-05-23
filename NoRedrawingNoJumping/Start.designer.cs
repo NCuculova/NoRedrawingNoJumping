@@ -106,7 +106,7 @@
             this.ClientSize = new System.Drawing.Size(337, 336);
             this.Controls.Add(this.panel1);
             this.Name = "Start";
-            this.Text = "Form1";
+            this.Text = "NO Redrawing NO Jumping ";
             this.VisibleChanged += new System.EventHandler(this.Start_VisibleChanged);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

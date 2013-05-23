@@ -16,7 +16,7 @@ namespace NoRedrawingNoJumping
         public Node(int x, int y)
         {
             Position = new Point(x, y);
-            radius = 5;
+            radius = 7;
         }
         public void DrawNode(Graphics g)
         {
