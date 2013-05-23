@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Name = "Play";
-            this.Text = "Play";
+            this.Text = "NO Redrawing NO Jumping  - Play";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Play_Paint);
             this.ResumeLayout(false);
 

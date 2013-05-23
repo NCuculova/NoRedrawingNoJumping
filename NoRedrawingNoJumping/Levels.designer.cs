@@ -243,7 +243,7 @@
             this.Controls.Add(this.btnLevel1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Levels";
-            this.Text = "Levels";
+            this.Text = "NO Redrawing NO Jumping  - Levels";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Levels_FormClosed);
             this.VisibleChanged += new System.EventHandler(this.Levels_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
