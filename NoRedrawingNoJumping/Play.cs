@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Resources;
 
 namespace NoRedrawingNoJumping
 {
@@ -18,6 +19,7 @@ namespace NoRedrawingNoJumping
             InitializeComponent();
             newGame = new Game();
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.BackgroundImage = Properties.Resources.bezime;
            
         }
 
