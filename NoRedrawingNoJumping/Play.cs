@@ -13,6 +13,8 @@ namespace NoRedrawingNoJumping
    public partial class Play : Form
     {
         public Game newGame;
+        public Point previusPoint;
+        public Point currentPoint;
   
         public Play()
         {
@@ -36,6 +38,62 @@ namespace NoRedrawingNoJumping
             
 
         }
+
+        private void button_refresh_Click(object sender, EventArgs e)
+        {
+            foreach (Node node in newGame.levels[newGame.isLoad - 1].nodes)
+            {
+                node.color = Color.Black;
+                Invalidate();
+            }
+            foreach (Edge edge in newGame.levels[newGame.isLoad - 1].edges)
+            {
+                edge.color = Color.Black;
+                Invalidate();
+            }
+           
+        }
+
+        private void Play_MouseClick(object sender, MouseEventArgs e)
+        {
+            foreach (Node node in newGame.levels[newGame.isLoad - 1].nodes)
+            {
+                
+                {
+                    if (previusPoint.IsEmpty)
+                    {
+                        if (node.IsHit(e.X, e.Y))
+                        {
+                            previusPoint = node.Position;
+                            node.color = Color.Pink;
+                            Invalidate();
+                        }
+
+                    }
+                    else
+                    {
+                        if (node.IsHit(e.X, e.Y))
+                        {
+                            node.color = Color.Pink;
+                            Invalidate();
+                            currentPoint = node.Position;
+                            foreach (Edge edge in newGame.levels[newGame.isLoad - 1].edges)
+                            {
+                                if ((edge.Node1.Position == previusPoint && edge.Node2.Position == currentPoint) || (edge.Node2.Position == previusPoint && edge.Node1.Position == currentPoint))
+                                {
+                                    edge.color = Color.White;
+                                    previusPoint = currentPoint;
+                                    Invalidate();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+
+       
 
     }
 }
