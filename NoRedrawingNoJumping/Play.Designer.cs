@@ -36,7 +36,7 @@
             // btnBack
             // 
             this.btnBack.Image = global::NoRedrawingNoJumping.Properties.Resources.back_arrow;
-            this.btnBack.Location = new System.Drawing.Point(136, 224);
+            this.btnBack.Location = new System.Drawing.Point(148, 275);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(39, 36);
             this.btnBack.TabIndex = 1;
@@ -46,7 +46,7 @@
             // button_refresh
             // 
             this.button_refresh.Image = global::NoRedrawingNoJumping.Properties.Resources.refresh;
-            this.button_refresh.Location = new System.Drawing.Point(81, 224);
+            this.button_refresh.Location = new System.Drawing.Point(89, 275);
             this.button_refresh.Name = "button_refresh";
             this.button_refresh.Size = new System.Drawing.Size(36, 36);
             this.button_refresh.TabIndex = 0;
@@ -57,7 +57,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(284, 311);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.button_refresh);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

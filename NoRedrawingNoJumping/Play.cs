@@ -15,6 +15,8 @@ namespace NoRedrawingNoJumping
         public Game newGame;
         public Point previusPoint;
         public Point currentPoint;
+        public int numEdges { get; set; }
+        public int numEdges1 { get; set; }
   
         public Play()
         {
@@ -22,6 +24,7 @@ namespace NoRedrawingNoJumping
             newGame = new Game();
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.BackgroundImage = Properties.Resources.bezime;
+            numEdges = 0;
            
         }
 
@@ -32,6 +35,14 @@ namespace NoRedrawingNoJumping
                 if (i == (newGame.isLoad-1)) {
 
                     newGame.levels[i].DrawGraph(e.Graphics, newGame.levels[i].nodes, newGame.levels[i].edges);
+                    numEdges1 = newGame.levels[i].edges.Count;
+                }
+            }
+             if (numEdges == numEdges1)
+            {
+                if(MessageBox.Show("Great Job"," ",MessageBoxButtons.OK, MessageBoxIcon.Information)==DialogResult.OK);
+                {
+                    this.Close();
                 }
             }
             
@@ -50,6 +61,7 @@ namespace NoRedrawingNoJumping
                 edge.color = Color.Black;
             }
             previusPoint = new Point();
+            numEdges = 0;
             Invalidate();
         }
 
@@ -57,7 +69,7 @@ namespace NoRedrawingNoJumping
         {
             foreach (Node node in newGame.levels[newGame.isLoad - 1].nodes)
             {
-                
+
                 {
                     if (previusPoint.IsEmpty)
                     {
@@ -73,16 +85,20 @@ namespace NoRedrawingNoJumping
                     {
                         if (node.IsHit(e.X, e.Y))
                         {
-                            node.color = Color.Pink;
-                            Invalidate();
+
                             currentPoint = node.Position;
                             foreach (Edge edge in newGame.levels[newGame.isLoad - 1].edges)
                             {
-                                if ((edge.Node1.Position == previusPoint && edge.Node2.Position == currentPoint) || (edge.Node2.Position == previusPoint && edge.Node1.Position == currentPoint))
+                                if (edge.color == Color.Black)
                                 {
-                                    edge.color = Color.White;
-                                    previusPoint = currentPoint;
-                                    Invalidate();
+                                    if ((edge.Node1.Position == previusPoint && edge.Node2.Position == currentPoint) || (edge.Node2.Position == previusPoint && edge.Node1.Position == currentPoint))
+                                    {
+                                        node.color = Color.Pink;
+                                        edge.color = Color.White;
+                                        numEdges++;
+                                        previusPoint = currentPoint;
+                                        Invalidate();
+                                    }
                                 }
                             }
                         }
@@ -102,12 +118,13 @@ namespace NoRedrawingNoJumping
                 edge.color = Color.Black;
             }
             previusPoint = new Point();
+            numEdges = 0;
             Invalidate();
         }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            this.Visible = false;
+           this.Close();
         }
         
 
