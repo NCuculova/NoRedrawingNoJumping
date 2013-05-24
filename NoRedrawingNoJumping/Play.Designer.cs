@@ -49,6 +49,7 @@
             this.Controls.Add(this.button_refresh);
             this.Name = "Play";
             this.Text = "NO Redrawing NO Jumping  - Play";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Play_FormClosed);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Play_Paint);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Play_MouseClick);
             this.ResumeLayout(false);

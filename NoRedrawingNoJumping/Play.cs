@@ -44,14 +44,13 @@ namespace NoRedrawingNoJumping
             foreach (Node node in newGame.levels[newGame.isLoad - 1].nodes)
             {
                 node.color = Color.Black;
-                Invalidate();
             }
             foreach (Edge edge in newGame.levels[newGame.isLoad - 1].edges)
             {
                 edge.color = Color.Black;
-                Invalidate();
             }
-           
+            previusPoint = new Point();
+            Invalidate();
         }
 
         private void Play_MouseClick(object sender, MouseEventArgs e)
@@ -90,6 +89,20 @@ namespace NoRedrawingNoJumping
                     }
                 }
             }
+        }
+
+        private void Play_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            foreach (Node node in newGame.levels[newGame.isLoad - 1].nodes)
+            {
+                node.color = Color.Black;
+            }
+            foreach (Edge edge in newGame.levels[newGame.isLoad - 1].edges)
+            {
+                edge.color = Color.Black;
+            }
+            previusPoint = new Point();
+            Invalidate();
         }
         
 
