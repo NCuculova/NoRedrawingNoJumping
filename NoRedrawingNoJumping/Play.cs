@@ -104,6 +104,11 @@ namespace NoRedrawingNoJumping
             previusPoint = new Point();
             Invalidate();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+        }
         
 
        

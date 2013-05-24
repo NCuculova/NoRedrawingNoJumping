@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Levels));
             this.btnLevel1 = new System.Windows.Forms.Button();
             this.btnLevel2 = new System.Windows.Forms.Button();
             this.btnLevel3 = new System.Windows.Forms.Button();
@@ -42,16 +42,9 @@
             this.btnLevel11 = new System.Windows.Forms.Button();
             this.btnLevel12 = new System.Windows.Forms.Button();
             this.button_Return = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(0, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(362, 353);
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
             // 
             // btnLevel1
             // 
@@ -69,6 +62,7 @@
             // btnLevel2
             // 
             this.btnLevel2.BackColor = System.Drawing.Color.Navy;
+            this.btnLevel2.Enabled = false;
             this.btnLevel2.Font = new System.Drawing.Font("Castellar", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLevel2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLevel2.Location = new System.Drawing.Point(91, 88);
@@ -82,6 +76,7 @@
             // btnLevel3
             // 
             this.btnLevel3.BackColor = System.Drawing.Color.Navy;
+            this.btnLevel3.Enabled = false;
             this.btnLevel3.Font = new System.Drawing.Font("Castellar", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLevel3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLevel3.Location = new System.Drawing.Point(170, 88);
@@ -95,6 +90,7 @@
             // btnLevel4
             // 
             this.btnLevel4.BackColor = System.Drawing.Color.Navy;
+            this.btnLevel4.Enabled = false;
             this.btnLevel4.Font = new System.Drawing.Font("Castellar", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLevel4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLevel4.Location = new System.Drawing.Point(249, 88);
@@ -108,6 +104,7 @@
             // btnLevel5
             // 
             this.btnLevel5.BackColor = System.Drawing.Color.Navy;
+            this.btnLevel5.Enabled = false;
             this.btnLevel5.Font = new System.Drawing.Font("Castellar", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLevel5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLevel5.Location = new System.Drawing.Point(12, 156);
@@ -121,6 +118,7 @@
             // btnLevel6
             // 
             this.btnLevel6.BackColor = System.Drawing.Color.Navy;
+            this.btnLevel6.Enabled = false;
             this.btnLevel6.Font = new System.Drawing.Font("Castellar", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLevel6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLevel6.Location = new System.Drawing.Point(91, 156);
@@ -134,6 +132,7 @@
             // btnLevel7
             // 
             this.btnLevel7.BackColor = System.Drawing.Color.Navy;
+            this.btnLevel7.Enabled = false;
             this.btnLevel7.Font = new System.Drawing.Font("Castellar", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLevel7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLevel7.Location = new System.Drawing.Point(170, 156);
@@ -147,6 +146,7 @@
             // btnLevel8
             // 
             this.btnLevel8.BackColor = System.Drawing.Color.Navy;
+            this.btnLevel8.Enabled = false;
             this.btnLevel8.Font = new System.Drawing.Font("Castellar", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLevel8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLevel8.Location = new System.Drawing.Point(249, 156);
@@ -160,6 +160,7 @@
             // btnLevel9
             // 
             this.btnLevel9.BackColor = System.Drawing.Color.Navy;
+            this.btnLevel9.Enabled = false;
             this.btnLevel9.Font = new System.Drawing.Font("Castellar", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLevel9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLevel9.Location = new System.Drawing.Point(12, 224);
@@ -173,6 +174,7 @@
             // btnLevel10
             // 
             this.btnLevel10.BackColor = System.Drawing.Color.Navy;
+            this.btnLevel10.Enabled = false;
             this.btnLevel10.Font = new System.Drawing.Font("Castellar", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLevel10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLevel10.Location = new System.Drawing.Point(91, 224);
@@ -186,6 +188,7 @@
             // btnLevel11
             // 
             this.btnLevel11.BackColor = System.Drawing.Color.Navy;
+            this.btnLevel11.Enabled = false;
             this.btnLevel11.Font = new System.Drawing.Font("Castellar", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLevel11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLevel11.Location = new System.Drawing.Point(170, 224);
@@ -199,6 +202,7 @@
             // btnLevel12
             // 
             this.btnLevel12.BackColor = System.Drawing.Color.Navy;
+            this.btnLevel12.Enabled = false;
             this.btnLevel12.Font = new System.Drawing.Font("Castellar", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLevel12.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLevel12.Location = new System.Drawing.Point(249, 224);
@@ -222,6 +226,14 @@
             this.button_Return.UseVisualStyleBackColor = false;
             this.button_Return.Click += new System.EventHandler(this.button_Return_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(0, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(362, 353);
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
+            // 
             // Levels
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -242,6 +254,7 @@
             this.Controls.Add(this.btnLevel2);
             this.Controls.Add(this.btnLevel1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Levels";
             this.Text = "NO Redrawing NO Jumping  - Levels";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Levels_FormClosed);

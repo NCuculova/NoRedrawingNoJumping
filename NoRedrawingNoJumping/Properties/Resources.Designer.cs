@@ -60,6 +60,13 @@ namespace NoRedrawingNoJumping.Properties {
             }
         }
         
+        internal static System.Drawing.Bitmap back_arrow {
+            get {
+                object obj = ResourceManager.GetObject("back_arrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap bezime {
             get {
                 object obj = ResourceManager.GetObject("bezime", resourceCulture);

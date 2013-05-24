@@ -28,13 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Play));
+            this.btnBack = new System.Windows.Forms.Button();
             this.button_refresh = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnBack
+            // 
+            this.btnBack.Image = global::NoRedrawingNoJumping.Properties.Resources.back_arrow;
+            this.btnBack.Location = new System.Drawing.Point(136, 224);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(39, 36);
+            this.btnBack.TabIndex = 1;
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // button_refresh
             // 
             this.button_refresh.Image = global::NoRedrawingNoJumping.Properties.Resources.refresh;
-            this.button_refresh.Location = new System.Drawing.Point(115, 224);
+            this.button_refresh.Location = new System.Drawing.Point(81, 224);
             this.button_refresh.Name = "button_refresh";
             this.button_refresh.Size = new System.Drawing.Size(36, 36);
             this.button_refresh.TabIndex = 0;
@@ -46,7 +58,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.button_refresh);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Play";
             this.Text = "NO Redrawing NO Jumping  - Play";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Play_FormClosed);
@@ -59,6 +73,7 @@
         #endregion
 
         private System.Windows.Forms.Button button_refresh;
+        private System.Windows.Forms.Button btnBack;
     }
 }
 
