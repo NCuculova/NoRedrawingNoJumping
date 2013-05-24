@@ -74,6 +74,13 @@ namespace NoRedrawingNoJumping.Properties {
             }
         }
         
+        internal static System.Drawing.Icon Icontexto_Search_Search_red_dark {
+            get {
+                object obj = ResourceManager.GetObject("Icontexto_Search_Search_red_dark", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
         internal static System.Drawing.Bitmap prva {
             get {
                 object obj = ResourceManager.GetObject("prva", resourceCulture);

@@ -17,6 +17,7 @@ namespace NoRedrawingNoJumping
         SoundPlayer Sound4;
         Play play;
         
+        
         public Levels(Form f)
         {
             InitializeComponent();
@@ -58,18 +59,33 @@ namespace NoRedrawingNoJumping
         {
            play.newGame.isLoad = 2;
            play.ShowDialog();
+           if (play.levelClear)
+           {
+               btnLevel3.Enabled = true;
+               MessageBox.Show("Level 3 unlocked!");
+           }
         }
 
         private void btnLevel1_Click(object sender, EventArgs e)
         {
             play.newGame.isLoad = 1;
             play.ShowDialog();
+            if (play.levelClear)
+            {
+                btnLevel2.Enabled = true;
+                MessageBox.Show("Level 2 unlocked!");
+            }
         }
 
         private void btnLevel3_Click(object sender, EventArgs e)
         {
             play.newGame.isLoad = 3;
             play.ShowDialog();
+            if (play.levelClear)
+            {
+                btnLevel4.Enabled = true;
+                MessageBox.Show("Level 4 unlocked!");
+            }
 
         }
 
@@ -77,54 +93,98 @@ namespace NoRedrawingNoJumping
         {
             play.newGame.isLoad = 4;
             play.ShowDialog();
+            if (play.levelClear)
+            {
+                btnLevel5.Enabled = true;
+                MessageBox.Show("Level 5 unlocked!");
+            }
         }
 
         private void btnLevel5_Click(object sender, EventArgs e)
         {
             play.newGame.isLoad = 5;
             play.ShowDialog();
+            if (play.levelClear)
+            {
+                btnLevel6.Enabled = true;
+                MessageBox.Show("Level 6 unlocked!");
+            }
         }
 
         private void btnLevel6_Click(object sender, EventArgs e)
         {
             play.newGame.isLoad = 6;
             play.ShowDialog();
+            if (play.levelClear)
+            {
+                btnLevel7.Enabled = true;
+                MessageBox.Show("Level 7 unlocked!");
+            }
         }
 
         private void btnLevel7_Click(object sender, EventArgs e)
         {
             play.newGame.isLoad = 7;
             play.ShowDialog();
+            if (play.levelClear)
+            {
+                btnLevel8.Enabled = true;
+                MessageBox.Show("Level 8 unlocked!");
+            }
         }
 
         private void btnLevel8_Click(object sender, EventArgs e)
         {
             play.newGame.isLoad = 8;
             play.ShowDialog();
+            if (play.levelClear)
+            {
+                btnLevel9.Enabled = true;
+                MessageBox.Show("Level 9 unlocked!");
+            }
         }
 
         private void btnLevel9_Click(object sender, EventArgs e)
         {
             play.newGame.isLoad = 9;
             play.ShowDialog();
+            if (play.levelClear)
+            {
+                btnLevel10.Enabled = true;
+                MessageBox.Show("Level 10 unlocked!");
+            }
         }
 
         private void btnLevel10_Click(object sender, EventArgs e)
         {
             play.newGame.isLoad = 10;
             play.ShowDialog();
+            if (play.levelClear)
+            {
+                btnLevel11.Enabled = true;
+                MessageBox.Show("Level 11 unlocked!");
+            }
         }
 
         private void btnLevel11_Click(object sender, EventArgs e)
         {
             play.newGame.isLoad = 11;
             play.ShowDialog();
+            if (play.levelClear)
+            {
+                btnLevel12.Enabled = true;
+                MessageBox.Show("Level 12 unlocked!");
+            }
         }
 
         private void btnLevel12_Click(object sender, EventArgs e)
         {
             play.newGame.isLoad = 12;
             play.ShowDialog();
+            if (play.levelClear)
+            {
+                MessageBox.Show("YOU ARE AWESOME!");
+            }
         }
 
         

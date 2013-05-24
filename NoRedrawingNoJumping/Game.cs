@@ -319,7 +319,7 @@ namespace NoRedrawingNoJumping
            graph12.edges.Add(new Edge(graph12.nodes[5], graph12.nodes[6]));
            graph12.edges.Add(new Edge(graph12.nodes[4], graph12.nodes[6]));
            graph12.edges.Add(new Edge(graph12.nodes[4], graph12.nodes[7]));
-           graph12.edges.Add(new Edge(graph12.nodes[5], graph12.nodes[7]));
+           graph12.edges.Add(new Edge(graph12.nodes[6], graph12.nodes[7]));
            graph12.edges.Add(new Edge(graph12.nodes[7], graph12.nodes[10]));
            graph12.edges.Add(new Edge(graph12.nodes[5], graph12.nodes[8]));
            graph12.edges.Add(new Edge(graph12.nodes[8], graph12.nodes[9]));

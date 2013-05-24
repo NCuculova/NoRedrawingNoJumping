@@ -17,6 +17,7 @@ namespace NoRedrawingNoJumping
         public Point currentPoint;
         public int numEdges { get; set; }
         public int numEdges1 { get; set; }
+        public bool levelClear;
   
         public Play()
         {
@@ -25,6 +26,7 @@ namespace NoRedrawingNoJumping
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.BackgroundImage = Properties.Resources.bezime;
             numEdges = 0;
+            levelClear = false;
            
         }
 
@@ -40,10 +42,8 @@ namespace NoRedrawingNoJumping
             }
              if (numEdges == numEdges1)
             {
-                if(MessageBox.Show("Great Job"," ",MessageBoxButtons.OK, MessageBoxIcon.Information)==DialogResult.OK);
-                {
                     this.Close();
-                }
+                    levelClear = true;
             }
             
             

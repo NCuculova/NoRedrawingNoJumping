@@ -45,7 +45,7 @@
             // 
             // button_refresh
             // 
-            this.button_refresh.Image = global::NoRedrawingNoJumping.Properties.Resources.refresh;
+            this.button_refresh.Image = ((System.Drawing.Image)(resources.GetObject("button_refresh.Image")));
             this.button_refresh.Location = new System.Drawing.Point(89, 275);
             this.button_refresh.Name = "button_refresh";
             this.button_refresh.Size = new System.Drawing.Size(36, 36);
