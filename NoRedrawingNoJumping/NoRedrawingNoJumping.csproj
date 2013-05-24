@@ -129,6 +129,9 @@
   <ItemGroup>
     <None Include="Resources\Icontexto-Search-Search-red-dark.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Applause_Crowd_Cheering_sound_effect.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -60,6 +60,12 @@ namespace NoRedrawingNoJumping.Properties {
             }
         }
         
+        internal static System.IO.UnmanagedMemoryStream Applause_Crowd_Cheering_sound_effect {
+            get {
+                return ResourceManager.GetStream("Applause_Crowd_Cheering_sound_effect", resourceCulture);
+            }
+        }
+        
         internal static System.Drawing.Bitmap back_arrow {
             get {
                 object obj = ResourceManager.GetObject("back_arrow", resourceCulture);

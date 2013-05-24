@@ -15,6 +15,7 @@ namespace NoRedrawingNoJumping
     {
         Form forma;
         SoundPlayer Sound4;
+        SoundPlayer Sound5;
         Play play;
         
         
@@ -23,6 +24,7 @@ namespace NoRedrawingNoJumping
             InitializeComponent();
             Sound4 = new SoundPlayer(Properties.Resources.song2);
             Sound4.Play();
+            Sound5 = new SoundPlayer(Properties.Resources.Applause_Crowd_Cheering_sound_effect);
             pictureBox1.BackgroundImage = Properties.Resources.vtora; 
             forma = f;
             play = new Play();
@@ -183,6 +185,7 @@ namespace NoRedrawingNoJumping
             play.ShowDialog();
             if (play.levelClear)
             {
+                Sound5.Play();
                 MessageBox.Show("YOU ARE AWESOME!");
             }
         }
