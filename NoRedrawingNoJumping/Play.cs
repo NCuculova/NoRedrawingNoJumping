@@ -69,8 +69,6 @@ namespace NoRedrawingNoJumping
         {
             foreach (Node node in newGame.levels[newGame.isLoad - 1].nodes)
             {
-
-                {
                     if (previusPoint.IsEmpty)
                     {
                         if (node.IsHit(e.X, e.Y))
@@ -105,7 +103,8 @@ namespace NoRedrawingNoJumping
                     }
                 }
             }
-        }
+        
+        
 
         private void Play_FormClosed(object sender, FormClosedEventArgs e)
         {
