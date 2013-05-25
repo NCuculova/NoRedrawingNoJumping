@@ -43,6 +43,9 @@ if ((edge.Node1.Position == previusPoint && edge.Node2.Position == currentPoint)
 
 
 Изработиле:
+
 Надица Цуцулова 115076
+
 Анастасија Вршковска 115015
+
 Ивана Трајкова 115072
