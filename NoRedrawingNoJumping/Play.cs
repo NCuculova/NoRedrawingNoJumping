@@ -108,6 +108,11 @@ namespace NoRedrawingNoJumping
 
         private void Play_FormClosed(object sender, FormClosedEventArgs e)
         {
+            if (numEdges != numEdges1)
+            {
+
+                levelClear = false;
+            }
             foreach (Node node in newGame.levels[newGame.isLoad - 1].nodes)
             {
                 node.color = Color.Black;
